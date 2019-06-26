@@ -46,7 +46,8 @@ h2{
     font-size: 40px;
 }
 p{
-    margin: 20px 200px;
+    margin: 20px 0;
+    width: 70%;
     font-size: 24px;
 }
 #page-1 p{
