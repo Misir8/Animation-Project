@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Animation Project</title>
+</head>
+<body>
+    <section id="page-1" class="page">
+        <h1>Welkome To My Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt provident corporis placeat doloremque aspernatur veniam maiores odit ipsum illum quas facere doloribus tenetur expedita et necessitatibus, mollitia porro obcaecati? Veritatis aspernatur aperiam dicta dolores! Porro vel, saepe laboriosam amet alias delectus eius quas ex iste quia, accusantium praesentium reiciendis voluptates.</p>
+        <a href="#page-2" class="btn-light btn">Next Page <i class="fas fa-arrow-alt-circle-down"></i></a>
+    </section>
+    <section id="page-2" class="page">
+        <h2>Welkome To My Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt provident corporis placeat doloremque aspernatur veniam maiores odit ipsum illum quas facere doloribus tenetur expedita et necessitatibus, mollitia porro obcaecati? Veritatis aspernatur aperiam dicta dolores! Porro vel, saepe laboriosam amet alias delectus eius quas ex iste quia, accusantium praesentium reiciendis voluptates.</p>
+        <div><a href="#page-1" class="btn-dark btn">Previous Page <i class="fas fa-arrow-alt-circle-up"></i></a>
+        <a href="#page-3" class="btn-light btn">Next Page <i class="fas fa-arrow-alt-circle-down"></i></a>
+        <div>
+    </section>
+    <section id="page-3" class="page">
+        <h2>Welkome To My Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt provident corporis placeat doloremque aspernatur veniam maiores odit ipsum illum quas facere doloribus tenetur expedita et necessitatibus, mollitia porro obcaecati? Veritatis aspernatur aperiam dicta dolores! Porro vel, saepe laboriosam amet alias delectus eius quas ex iste quia, accusantium praesentium reiciendis voluptates.</p>
+        <div>
+            <a href="#page-2" class="btn-dark btn">Previous Page <i class="fas fa-arrow-alt-circle-up"></i></a>
+            <a href="#page-4" class="btn-light btn">Next Page <i class="fas fa-arrow-alt-circle-down"></i></a>
+        </div>
+    </section>
+    <section id="page-4" class="page">
+        <h2>Welkome To My Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt provident corporis placeat doloremque aspernatur veniam maiores odit ipsum illum quas facere doloribus tenetur expedita et necessitatibus, mollitia porro obcaecati? Veritatis aspernatur aperiam dicta dolores! Porro vel, saepe laboriosam amet alias delectus eius quas ex iste quia, accusantium praesentium reiciendis voluptates.</p>
+        <a href="#page-3" class="btn-dark btn">Previous Page <i class="fas fa-arrow-alt-circle-up"></i></a>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+    // Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  </script>
+</body>
+</html>

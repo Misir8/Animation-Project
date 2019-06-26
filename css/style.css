@@ -1,0 +1,101 @@
+:root{
+    --bg-page-1: steelblue;
+    --bg-page-2: #DBAC5C;
+    --bg-page-3: #30BEAD;
+    --bg-page-4: #79BE1F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+.page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#page-1{
+    background-color: var(--bg-page-1);
+}
+#page-2{
+    background-color: var(--bg-page-2);
+}
+#page-3{
+    background-color: var(--bg-page-3);
+}
+#page-4{
+    background-color: var(--bg-page-4);
+}
+
+h1{
+    font-size: 64px;
+    transform: translateY(-1200px);
+    animation-name: heading;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    
+}
+h2{
+    font-size: 40px;
+}
+p{
+    margin: 20px 200px;
+    font-size: 24px;
+}
+#page-1 p{
+    animation-name: text;
+    transform: translateX(-2000px);
+    animation-name: text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 1.5s;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px;
+}
+.btn-light{
+    background-color: #fff;
+    color:#333;
+}
+.btn-light i{
+    color: #333;
+}
+.btn-dark{
+    background-color: #333;
+}
+.btn-light:hover{
+    background-color: #333;
+    color: #fff;
+}
+.btn-light:hover i{
+    color: #fff;
+}
+.btn-dark:hover{
+    background-color: #fff;
+    color: #333;
+}
+.btn-dark:hover i{
+    color: #333;
+}
+/* Keyframes */
+@keyframes heading{
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes text{
+    to{
+        transform: translateX(0);
+    }
+}
